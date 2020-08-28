@@ -1,3 +1,5 @@
+// Ejemplo de ejecución de un archivo javascript usando node
+
 const frutas = ["manzana", "pera", "durazno"]
 
 frutas.forEach((fruta) => {
