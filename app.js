@@ -1,12 +1,8 @@
-const frutas = ["manzana", "pera", "durazno"]
+const { fruit, money } = require("./frutas");
 
-frutas.forEach((fruta) => {
-    console.log(fruta);
-    //console.count(fruta);
-});
-
-
-frutas.forEach((fruta) => {
+fruit.forEach((fruitsss) => {
     //console.log(fruta);
-    console.count(fruta);
+    console.count(fruitsss);
 });
+
+console.log(money);
