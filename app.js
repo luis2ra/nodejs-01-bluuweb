@@ -1,17 +1,13 @@
-const { fruit, money } = require("./frutas");
+const http = require('http');
 
-const cowsay = require('cowsay');
-
-fruit.forEach((fruitsss) => {
-    //console.log(fruta);
-    console.count(fruitsss);
+const server = http.createServer((req,res) => {
+	res.end("Respuesta a la solicitud v2.0...")
 });
 
-console.log(money);
 
-console.log(cowsay.say({
-	text : "I'm a moodule",
-	e : "oO",
-	T : "U "
-}));
+const puerto = 3000;
+
+server.listen(puerto, () => {
+	console.log('escuchando las solicitudes integrado con nodemon...')
+});	
 
