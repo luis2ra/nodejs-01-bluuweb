@@ -8,6 +8,6 @@ const server = http.createServer((req,res) => {
 const puerto = 3000;
 
 server.listen(puerto, () => {
-	console.log('escuchando las solicitudes integrado con nodemon...')
+	console.log('escuchando las solicitudes integrado con nodemon para lanzar la app...')
 });	
 
