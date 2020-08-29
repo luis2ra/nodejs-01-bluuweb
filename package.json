@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-01-bluuweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luis2ra/nodejs-01-bluuweb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luis2ra/nodejs-01-bluuweb/issues"
+  },
+  "homepage": "https://github.com/luis2ra/nodejs-01-bluuweb#readme",
+  "dependencies": {
+    "cowsay": "^1.4.0"
+  }
+}
