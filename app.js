@@ -1,13 +1,30 @@
-const http = require('http');
+// Modelo de servidor generado con express
+const express = require('express');
+const app = express();
 
-const server = http.createServer((req,res) => {
-	res.end("Respuesta a la solicitud v2.0...")
+const port = 3000;
+
+// La posición de esta línea prevalece sobre
+// las setencias que le siguen
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', (req, res) =>{
+    res.send('Respuesta ejecutada desde express.js')
 });
 
+// Definiendo otra ruta para el servidor
+app.get('/servicios', (req, res) => {
+    res.send('se invova la página de servicios')
+});
 
-const puerto = 3000;
+// app.use(express.static(__dirname + '/public'));
 
-server.listen(puerto, () => {
-	console.log('escuchando solicitudes integrado con nodemon para lanzar la app...')
-});	
+// Según, se define un middleware para cualquier solicitud de ruta
+// que no esté definida en el proyecto
+app.use((req, res, next) => {
+    res.status(404).sendFile(__dirname + '/public/404.html')
+});
 
+app.listen(port, () => {
+    console.log('servidor ejecutándose en el puerto', port)
+});
