@@ -19,6 +19,7 @@
   "homepage": "https://github.com/luis2ra/nodejs-01-bluuweb#readme",
   "dependencies": {
     "cowsay": "^1.4.0",
+    "ejs": "^3.1.5",
     "express": "^4.17.1"
   }
 }
